@@ -65,41 +65,52 @@
                         <br><br>
 
                         <h3 class="wow fadeInUp" data-wow-delay="0.2s">say hello 👋</h3><br>
-                        <p class="wow fadeInUp" data-wow-delay="0.4s">get in touch, send me a message, I'll respond in 1-2 business days</p>
+                        <p class="wow fadeInUp" data-wow-delay="0.4s">get in touch, send me a message, I'll respond in 1-2 business days. Your email and response is not shared with anyone.</p>
 
                   </div>
             </div>
-            
 
             <!-- <div class="whitespace"></div> -->
             <br><br><br>
             <div class="container wow fadeInUp" data-wow-delay="0.6s">
                   <form action="https://api.web3forms.com/submit" method="POST">
                         <input type="hidden" name="apikey" value="5c194ad0-0a47-4428-bdc6-a1523198f0fc">
+
                         <div class="form-group">
-                        <label for="email">Email address</label>
+                        <label for="name" name="name">your name</label>
+                        <input type="name" name="name" class="form-control" id="name" placeholder="first and last name" required>
+                        </div>
+
+                        <div class="form-group">
+                        <label for="email">email</label>
                         <input type="email" name="email" class="form-control" id="email" placeholder="name@domain.com" required>
                         </div>
+
                         <div class="form-group">
-                              <label for="gender">Gender</label>
+                              <label for="gender">gender</label>
                               <select class="form-control" id="gender" name="gender">
                                     <option>Male</option>
                                     <option>Female</option>
                                     <option>Wish not to say</option>
                               </select>
                         </div>
+                        
                         <div class="form-group">
-                        <label for="message">What's is your message?</label>
+                              <label for="country">country</label>
+                              <select name="country" id="country"class="form-control selectpicker countrypicker" data-default="IN" data-flag="true" ></select>
+                        </div>
+                        <div class="form-group">
+                        <label for="message">what is your message?</label>
                         <textarea name="text" class="form-control" id="message" placeholder="say here" rows="3" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-success">Submit Form</button>
+                        <br>
+                        <button type="submit" class="btn btn-success">submit form</button>
                   </form>
             </div>
 
 
             <div class="whitespace"></div>
 
-            <!--------------- footer starts here --------------->
             <div class="footer">
                   <div class="container">
                         <br><br>
@@ -124,7 +135,7 @@
                               <div class="row">
                                     <div class="col-lg-4" id="personal">
                                           <p class="wow fadeInUp">connect with me</p>
-                                          <h4 class="wow fadeInUp" data-wow-delay="0.2s">ig @harrnish</h4>
+                                          <h4 class="wow fadeInUp" data-wow-delay="0.2s"><a class="text-white" href="https://instagram.com/theroyakash">instagram @theroyakash</a></h4>
                                           <br><br>
                                     </div>
 
@@ -132,10 +143,9 @@
                                           <p class="wow fadeInUp" data-wow-delay="0s">follow me</p>
 
                                           <ul>
-                                                <li id="fb" class="wow fadeInUp" data-wow-delay="0.4s">fb</li>
-                                                <li id="ig" class="wow fadeInUp" data-wow-delay="0.6s">ig</li>
-                                                <li id="tw" class="wow fadeInUp" data-wow-delay="0.8s">tw</li>
-                                                <li id="yt" class="wow fadeInUp" data-wow-delay="1s">yt</li>
+                                                <li id="fb" class="wow fadeInUp" data-wow-delay="0.4s"><a class="text-white" href="https://facebook.com/theroyakash">fb</a></li>
+                                                <li id="ig" class="wow fadeInUp" data-wow-delay="0.6s"><a class="text-white" href="https://instagram.com/theroyakash">ig</a></li>
+                                                <li id="tw" class="wow fadeInUp" data-wow-delay="0.8s"><a class="text-white" href="https://twitter.com/theroyakash">tw</a></li>
                                           </ul>
 
                                           <br><br>
@@ -143,14 +153,13 @@
 
                                     <div class="col-lg-4" id="address">
                                           <p class="wow fadeInUp" data-wow-delay="0s">say hello</p>
-                                          <h4 class="wow fadeInUp" data-wow-delay="0.2s">harrnish@gmail.com</h4>
+                                          <h4 class="wow fadeInUp" data-wow-delay="0.2s"><a class="text-white" href="mailto:hey@iamroyakash.com">hey@iamroyakash.com</a></h4>
                                           <br><br>
                                     </div>
                               </div>
                         </div>
                   </div>
             </div>
-            <!--------------- footer ends here --------------->
 
             <br><br><br><br>
 
@@ -202,5 +211,10 @@
 
 
       </script>
+
+      <script>
+      $('.countrypicker').countrypicker();
+      </script>
+      <script src="https://unpkg.com/bootstrap-select-country@4.0.0/dist/js/bootstrap-select-country.min.js"></script>
 </body>
 </html>
