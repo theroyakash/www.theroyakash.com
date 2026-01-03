@@ -20,6 +20,10 @@
     font-weight: bold;
 }
 
+@font-face {
+    font-family: 'chankharpul';
+    src: url('./bengali.ttf') format('truetype');
+}
 
 h1, h2, h3, h4, h5, h6, div{
     font-family: 'DaVinci';
