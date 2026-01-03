@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Nueue Berlin';
+    src: url('AFNeueBerlin-Variable-VF.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DaVinci';
+    src: url('TRJNDaVinci-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'cheltenham';
+    src: url('./cheltenham-normal.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'cheltenham';
+    src: url('./cheltenham-bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+
+h1, h2, h3, h4, h5, h6, div{
+    font-family: 'DaVinci';
+}
+
+p, li{
+    font-family: 'Nueue Berlin';
+}
+
+.workexp {
+    font-family: 'cheltenham';
+}
