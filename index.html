@@ -44,6 +44,26 @@
         li {
             font-size: clamp(20px, 2.5vw, 45px);
         }
+
+        .blurinout {
+            animation: autoBlurInOut linear both;
+            animation-timeline: view();
+        }
+
+        @keyframes autoBlurInOut {
+            0% {
+                filter: blur(3px);
+            }
+
+            40%,
+            50% {
+                filter: blur(0);
+            }
+
+            100% {
+                filter: blur(10px);
+            }
+        }
     </style>
 
     <meta charset="utf-8">
@@ -79,43 +99,71 @@
                     style="height: 1em; vertical-align: middle; border-radius: 1em;" src="./profile.jpg" alt=""></span>
             theroyakash - <span style="font-family: 'chankharpul';">আকাশ, রায়</span></h1>
         <p class="animate-blur">I am a <span style="font-weight: bold;">Software Engineer</span> at <span
-                style="font-weight: bold; color: #0078D6;"><i class="bi bi-microsoft"></i> Microsoft</span> India development center. I was a master
-            student, and a teaching assistant at the <span style="font-weight: bold; color:#8B3A3A">department of computer
+                style="font-weight: bold; color: #0078D6;"><i class="bi bi-microsoft"></i> Microsoft</span> India
+            development center. I was a master
+            student, and a teaching assistant at the <span style="font-weight: bold; color:#8B3A3A">department of
+                computer
                 science</span> of <span><img src="https://www.ee.iitm.ac.in/img/sitelogo.png" alt=""
                     style="height: 1em; vertical-align: middle;"></span> <span
                 style="color:#D7A84E;font-weight: bold;">Indian Institute of Technology, Madras</span>, with
             research focusing on <span style="font-weight: bold;">algorithm design, data structures, and complexity
                 theory</span>.
 
+    </div>
 
-        <div class="animate-blur" style="font-size: clamp(22px, 10vw, 30px);">
-            my <a style="font-family: 'cheltenham'; color: #d20000;" href="http://youtube.com/@theroyakash"> <span><i style="color: #d20000;" class="bi bi-youtube"></i></span> youtube is here</a>
-        </div>
+    <div class="animate-blur content" style="text-align: center;">
+        <div class="animate-blur" style="display: flex; flex-direction: column; gap: 2.5em;"></div>
+
+        <h1 class="animate-blur blurinout" style="font-size: clamp(22px, 10vw, 60px); transform: translateX(-10%);"><a
+                style="text-decoration: none; color: #d20000;" href="http://youtube.com/@theroyakash"
+                target="_blank"><span>this is my <i class="bi bi-youtube"></i></span> youtube <i
+                    class="bi bi-arrow-up-right"></i></a></h1>
+        <h1 class="animate-blur blurinout" style="font-size: clamp(22px, 10vw, 60px); transform: translateX(-3%);"><a
+                style="text-decoration: none; color:black;" href="https://github.com/theroyakash/" target="_blank">see
+                my projects on <i class="bi bi-github"></i> github <i class="bi bi-body-text"></i></a></h1>
+        <h1 class="animate-blur blurinout" style="font-size: clamp(22px, 10vw, 60px); transform: translateX(3%);"><a
+                style="text-decoration: none; color:#E11B93;" href="https://www.instagram.com/theroyakash"
+                target="_blank">follow me on <i class="bi bi-instagram"></i> instagram <i
+                    class="bi bi-person-badge"></i></a></h1>
+        <h1 class="animate-blur blurinout" style="font-size: clamp(22px, 10vw, 60px); transform: translateX(-2%);"><a
+                style="text-decoration: none; color:#9146FF;" href="https://algorithms.theroyakash.com/"
+                target="_blank">start learning <i class="bi bi-input-cursor-text"></i> algorithms here <i
+                    class="bi bi-braces-asterisk"></i></a></h1>
+
     </div>
 
 
     <div class="content">
-        <h1 class="animate-blur" style="font-size: clamp(22px, 10vw, 60px);">cv <span><a style="color:#d20000; font-family: 'cheltenham'; font-size: clamp(12px, 10vw, 40px);" href="https://cdn.theroyakash.com/cv.pdf">see pdf <i class="bi bi-file-earmark-pdf-fill"></i></a></span></h1>
+        <h1 class="animate-blur" style="font-size: clamp(22px, 10vw, 60px);">cv <span><a
+                    style="color:#d20000; font-family: 'cheltenham'; font-size: clamp(12px, 10vw, 40px);"
+                    href="https://cdn.theroyakash.com/cv.pdf">see pdf <i
+                        class="bi bi-file-earmark-pdf-fill"></i></a></span></h1>
         <div class="animate-blur" style="display: flex; flex-direction: column; gap: 2.5em;">
 
             <!-- Microsoft -->
-            <div class="company-block" >
+            <div class="company-block">
                 <div class="company-header">
-                    <div style="font-weight: bold; font-size: clamp(22px, 2.8vw, 48px); color: #0078D6;"><span><i
-                                class="bi bi-microsoft"></i></span> Microsoft India</div>
-                    <div style="font-size: clamp(16px, 2vw, 32px); color: #666;">Hyderabad, India - Microsoft Search Assistance Intelligence Group</div>
+                    <div class="" style="font-weight: bold; font-size: clamp(22px, 2.8vw, 48px); color: #0078D6;">
+                        <span><i class="bi bi-microsoft"></i></span> Microsoft India</div>
+                    <div class="" style="font-size: clamp(16px, 2vw, 32px); color: #666;">Hyderabad, India - Microsoft
+                        Search Assistance Intelligence Group</div>
                 </div>
 
                 <div class="roles" style="margin-top: 1em; display: flex; flex-direction: column; gap: 1.5em;">
 
                     <!-- Role: L60 -->
-                    <div class="role">
+                    <div class="role ">
                         <div style="font-size: clamp(18px, 2.2vw, 38px); font-weight: 600;">Software engineer (L60)
                         </div>
                         <div style="font-size: clamp(14px, 1.6vw, 26px); color: #888;">May 2025 - Present</div>
                         <p class="workexp"
                             style="font-size: clamp(15px, 1.8vw, 28px); color: #444; margin-top: 0.5em; line-height: 1.5;">
-                            Promoted to L60 (upper band of Software Engineer role) from L59 within <span style="font-weight: bold;">nine</span> months of joining at Microsoft. Working as a part of Microsoft's Search Assistant and Intelligence group (MSAI Org). Currently working on building the Microsoft's Copilot Chat for Office 365 Personal and Business users. <span style="font-weight: bold;color:green;">Awarded</span> with <span style="color:#0078D6">Microsoft's Spot award</span> for engineering excellence.
+                            Promoted to L60 (upper band of Software Engineer role) from L59 within <span
+                                style="font-weight: bold;">nine</span> months of joining at Microsoft. Working as a part
+                            of Microsoft's Search Assistant and Intelligence group (MSAI Org). Currently working on
+                            building the Microsoft's Copilot Chat for Office 365 Personal and Business users. <span
+                                style="font-weight: bold;color:green;">Awarded</span> with <span
+                                style="color:#0078D6">Microsoft's Spot award</span> for engineering excellence.
                         </p>
                     </div>
 
@@ -135,9 +183,10 @@
             </div>
 
             <!-- Amazon -->
-            <div class="company-block" >
+            <div class="company-block">
                 <div class="company-header">
-                    <div style="font-weight: bold; font-size: clamp(22px, 2.8vw, 48px); color: #ff9900;"><i class="bi bi-amazon"></i> Amazon</div>
+                    <div style="font-weight: bold; font-size: clamp(22px, 2.8vw, 48px); color: #ff9900;"><i
+                            class="bi bi-amazon"></i> Amazon</div>
                     <div style="font-size: clamp(16px, 2vw, 32px); color: #666;">Bangalore, India</div>
                 </div>
 
@@ -145,19 +194,24 @@
 
                     <!-- Role: SDE -->
                     <div class="role">
-                        <div style="font-size: clamp(18px, 2.2vw, 38px); font-weight: 600;">Software development engineer - intern</div>
-                        <div style="font-size: clamp(14px, 1.6vw, 26px); color: #888;">15th May 2023 - 7th July 2023</div>
+                        <div style="font-size: clamp(18px, 2.2vw, 38px); font-weight: 600;">Software development
+                            engineer - intern</div>
+                        <div style="font-size: clamp(14px, 1.6vw, 26px); color: #888;">15th May 2023 - 7th July 2023
+                        </div>
                         <p
                             style="font-size: clamp(15px, 1.8vw, 28px); color: #444; margin-top: 0.5em; line-height: 1.5;">
                         <ul>
-                            <li class="workexp" style="font-size: clamp(15px, 1.8vw, 28px);">Interned with the Registration and Core
+                            <li class="workexp" style="font-size: clamp(15px, 1.8vw, 28px);">Interned with the
+                                Registration and Core
                                 Services Org at Amazon India Bangalore Office. Received a return offer but declined it.
                             </li>
-                            <li class="workexp" style="font-size: clamp(15px, 1.8vw, 28px);">Implemented a redirection feature on the
+                            <li class="workexp" style="font-size: clamp(15px, 1.8vw, 28px);">Implemented a redirection
+                                feature on the
                                 Amazon Worldwide Seller Portal which automatically redirects seller from add new bank
                                 account page to the bank verification page. This is currently deployed to production
                             </li>
-                            <li class="workexp" style="font-size: clamp(15px, 1.8vw, 28px);">Designed and introduced new APIs in the
+                            <li class="workexp" style="font-size: clamp(15px, 1.8vw, 28px);">Designed and introduced new
+                                APIs in the
                                 backend of Worldwide Seller Central Portal which solved several dependencies issues and
                                 was a foundation for the rest of the team to migrate several APIs to a new platform</li>
                         </ul>
